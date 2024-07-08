@@ -8,10 +8,12 @@ import Registo from './components/pages/Registo';
 import Recuperacao from './components/pages/Recuperacao';
 import Privacidade from './components/pages/Privacidade';
 import Condicoes from './components/pages/Condicoes';
+import Modalpruduto from './components/layout/Modalpruduto';
 
 function App() {
   return (
     <Router>
+      <Modalpruduto/>
       <div id='gg'>
     <Navbar />
     <Container>
