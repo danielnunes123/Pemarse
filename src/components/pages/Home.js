@@ -1,12 +1,14 @@
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Categorias } from '../layout/Categorias'
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import logocolor from '../images/permase__1_-removebg-preview.png'
 import { Link } from 'react-router-dom';
+import Modalpruduto from '../layout/Modalpruduto';
 
 export default function Home() {
   const Categories = useRef(null);
+  const [openModal, setOpenModal] = useState(false)
 
   const handleLeftClick = (e) =>{
     e.preventDefault();
@@ -68,8 +70,10 @@ export default function Home() {
           </ul>
         </div>
         </div>
-        <div id='io'>© 2024 Pemarse. Todos direitos reservados.</div>
+        <div id='io'  onClick={()=> setOpenModal(true)}>© 2024 Pemarse. Todos direitos reservados.</div>
+        <button onClick={()=> setOpenModal(true)}>gfh</button>
       </footer>
+      <Modalpruduto  isOpen={openModal} isClose={()=> setOpenModal(false)}/>
     </div>
   )
 }

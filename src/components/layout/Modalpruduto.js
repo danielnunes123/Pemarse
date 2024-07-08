@@ -2,7 +2,7 @@ import React from 'react'
 import midia from '../videos/Design_sem_nome_2024_07_03T151414_164_V1.mp4'
 import { SendHorizontal } from 'lucide-react';
 
-export default function Modalpruduto() {
+const Modalpruduto = ({isOpen, isClose}) =>{
 function send(){
     const inp = document.getElementById("textvalue").value
     const span = document.getElementById("fgm")
@@ -18,13 +18,14 @@ function send(){
         </div>
     </div>`
 }
-
+if (isOpen) {
   return (
     <div id='modalpro'>
+        <button  onClick={isClose}>ghfhgf</button>
       <div className='submodal' id='modalpro1'>ghh
       </div>
       <div className='submodaln'>
-        <video id='nn' controls  autoPlay src={midia} type='video/mp4'/>
+        <video id='nn' controls src={midia} type='video/mp4'/>
       </div>
       <div className='submodal' id='modalpro2'>
         <div className='ypm'>
@@ -41,5 +42,9 @@ function send(){
         </div>
       </div>
     </div>
-  )
+  );
 }
+return null
+};
+
+export default Modalpruduto
