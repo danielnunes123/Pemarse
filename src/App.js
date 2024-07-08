@@ -6,6 +6,8 @@ import Container from './components/layout/Container';
 import Entrar from './components/pages/Entrar';
 import Registo from './components/pages/Registo';
 import Recuperacao from './components/pages/Recuperacao';
+import Privacidade from './components/pages/Privacidade';
+import Condicoes from './components/pages/Condicoes';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route  path="/entrar" element={<Entrar />} /> 
       <Route  path="/registro" element={<Registo />} /> 
       <Route  path="/recuperacao" element={<Recuperacao />} /> 
+      <Route  path="/privacidade" element={<Privacidade />} /> 
+      <Route  path="/condicoes" element={<Condicoes />} /> 
     </Routes>
     </Container>
     </div>

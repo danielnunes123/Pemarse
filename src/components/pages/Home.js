@@ -53,8 +53,8 @@ export default function Home() {
         <div id='footerinf'>
           <ul>
             <li><h2>SOBRE NOS</h2></li>
-          <Link id='fooli'><li>Termos e condições</li></Link>
-         <Link id='fooli'><li>Polica de Privacidade</li></Link>
+          <Link to='/condicoes' id='fooli'><li>Termos e condições</li></Link>
+         <Link to='/privacidade' id='fooli'><li>Polica de Privacidade</li></Link>
           </ul>
           <ul>
             <li><h2>CONTACTO</h2></li>
