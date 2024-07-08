@@ -29,7 +29,7 @@ export default function Registo() {
                 <input name='yy' type='checkbox' />
                 <label for='yy'>Eu aceito os</label>
                 </div>
-                <Link id='mk'>Termos e condições</Link>
+                <Link to='/condicoes' id='mk'>Termos e condições</Link>
                 </span>
                 <div id='kpo'>
                 <button id='btnentr'>Criar conta</button>
