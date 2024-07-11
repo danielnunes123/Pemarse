@@ -6,6 +6,7 @@ import logocolor from '../images/permase__1_-removebg-preview.png'
 import { Link } from 'react-router-dom';
 import Modalpruduto from '../layout/Modalpruduto';
 import Produtos from './Produtos';
+import Novos from '../layout/Novos';
 
 export default function Home() {
   const Categories = useRef(null);
@@ -48,6 +49,8 @@ export default function Home() {
          <button onClick={handleRightClick}><ArrowRight /></button>
          </div>   
          <br/>
+         <Novos/>
+         <br/>
          <Produtos/>
       </div>
       <footer id='footer'>
@@ -74,9 +77,9 @@ export default function Home() {
         </div>
         </div>
         <div id='io'  onClick={()=> setOpenModal(true)}>© 2024 Pemarse. Todos direitos reservados.</div>
-        <button onClick={()=> setOpenModal(true)}>gfh</button>
+       {/* <button onClick={()=> setOpenModal(true)}>gfh</button> */}
       </footer>
-      <Modalpruduto  isOpen={openModal} isClose={()=> setOpenModal(false)}/>
+    {/*  <Modalpruduto  isOpen={openModal} isClose={()=> setOpenModal(false)}/> */}
     </div>
   )
 }

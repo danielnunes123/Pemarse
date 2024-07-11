@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import LinesEllipsis from 'react-lines-ellipsis';
+
 
 export default function Produtos() {
     const [data,setData]= useState([])
@@ -18,7 +20,12 @@ export default function Produtos() {
       <div id='eej' key={produtos.id}>
         <img id='pon' src={produtos.image}/>
         <div className='mm'>
-      <span className='namepro'>{produtos.name}</span>
+        <LinesEllipsis
+        className='namepro'
+        text={produtos.name}
+        maxLine={1}
+        ellipsis="..."
+      />
       <span className='precopro'>{produtos.preco}Kz</span>
       </div>
       </div>
