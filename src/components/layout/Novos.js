@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward,IoIosArrowBack } from "react-icons/io";
 import LinesEllipsis from 'react-lines-ellipsis';
 
 
