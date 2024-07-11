@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import logocolor from '../images/permase__1_-removebg-preview.png'
 import { Link } from 'react-router-dom';
 import Modalpruduto from '../layout/Modalpruduto';
+import Produtos from './Produtos';
 
 export default function Home() {
   const Categories = useRef(null);
@@ -46,6 +47,8 @@ export default function Home() {
          </ul>
          <button onClick={handleRightClick}><ArrowRight /></button>
          </div>   
+         <br/>
+         <Produtos/>
       </div>
       <footer id='footer'>
         <div id='yu'>

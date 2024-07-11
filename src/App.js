@@ -8,6 +8,7 @@ import Registo from './components/pages/Registo';
 import Recuperacao from './components/pages/Recuperacao';
 import Privacidade from './components/pages/Privacidade';
 import Condicoes from './components/pages/Condicoes';
+import InfoPage from './Infopages';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route  path="/recuperacao" element={<Recuperacao />} /> 
       <Route  path="/privacidade" element={<Privacidade />} /> 
       <Route  path="/condicoes" element={<Condicoes />} /> 
+      <Route path="/produto/:id" element={<InfoPage/>} />
     </Routes>
     </Container>
     </div>
