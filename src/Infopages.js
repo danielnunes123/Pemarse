@@ -35,8 +35,12 @@ const InfoPage = () => {
             <li>Publicado:<span className='vendname'>{info.publicado}</span>em<span>{info.data}</span></li>
 
           </ul>
-        </div>
+          <ul className='dft'>
+          <li><h2>Sobre</h2></li>
+          <li>É nos momentos de decisão que todo o destino é moldado. As decisões que toma todos os dias, moldarão como se sente hoje e quem se tornará amanhã. Neste E-book, saberá de forma simples o que está por detrás da tomada das suas decisões, onde e como elas são processadas e o que fazer para tomar decisões mais assertivas e melhorar a sua vida em todos os aspectos.</li>
+        </ul>
       </div>
+        </div>
       <div className='nmpe'>
         <div>
     <h2 className='precotel'>{info.preco}Kz</h2>
